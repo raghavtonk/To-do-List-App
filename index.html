@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do-List-App</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div>
+            <img src="image/rocket.svg" alt="rocket">
+            <h1>to<span>do</span> </h1>
+        </div>
+    </header>
+    <div id="inputouter">
+        <form action="">
+            <div id="todoInput">
+            <div id="inputTags">
+                <input type="text" id="textinput" name="textinput" placeholder="Enter Your To-do List Task" value="">
+                <input type="date" name="dateinput" id="dateinput" value="2023-12-16" min="2023-12-16">
+                <!-- <label class="material-symbols-outlined" for="dateinput">calendar_month</label> -->
+                <select name="priority_level" id="priority_level">
+                    <option value="lowPriority">Low Priority</option>
+                    <option value="mediumPriority">Medium Priority</option>
+                    <option value="highPriority">High Priority</option>
+                </select>
+            </div> 
+            <button type="button" id="addbutton">Add <img src="image/plus.svg" alt="plus"></button>
+            </div>
+        </form>
+    </div>
+
+    <!-- <div id="search">
+       <div>
+        <input type="text" name="search" id="searchText" placeholder="search Your To-do List Task">
+       </div>
+     </div> -->
+
+     <div id="todocontainerwrap">
+        <div id="todocontainer">
+
+                <div class="upperStatus">
+                    <div>
+                        <p class="todoTag">To-do list</p>
+                        <p id="uptodotagcount">0</p>
+                    </div>
+                    <div>
+                        <p class="prioritytag">High Priority</p>
+                        <p id="upprioritytagcount">0</p>
+                    </div>
+                </div>
+
+                <div id="showtodotask">
+                    <div id="ifzerotask">
+                        <div><img src="image/Clipboard.svg" alt="Clipboard"></div>
+                        <div>
+                            <p>You have no To-do Items As of now</p>
+                        </div>
+                    </div>
+                    <div id="cartcontainer"></div>
+                    <!-- <div id="todoCart">
+                        <div><input type="checkbox" id="checkDone"></div>
+                        <div id="todonamediv">
+                            <p id="todoname"> Integer urna Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis vero, cumque, sint veniam id earum aliquid qui voluptatem quaerat sunt corrupti perspiciatis praesentium magni molestias, quidem tenetur! Doloremque, sapiente pariatur. interdum massa lor libero auctor neque turpis turpis semper. Duis vel sed fames integer.</p>
+                        </div>
+                    
+                            <button class="material-symbols-outlined" id="editbtn">
+                                edit
+                            </button>
+                            <button class="material-symbols-outlined" id="deletebtn">
+                                delete
+                            </button>
+                            <button class="material-symbols-outlined" id="savebtn">
+                                save
+                            </button>
+                      
+                        
+                    </div> -->
+                </div>
+
+                <div id="lowerStatus">
+                    <div class="lowerStatus_Top_part">
+                        <div>
+                            <p class="todoTag">Started</p>
+                            <p id="todotagcount">0</p>
+                        </div>
+                        <div>
+                            <p class="prioritytag">High Priority</p>
+                            <p id="prioritytagcount">0</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="lowerStatus_Bottom_part">
+                        <div>
+                            <p class="todoTag">Completed</p>
+                            <p id="Completedtagcount">0</p>
+                        </div>
+                        <div>
+                            <p class="prioritytag">High Priority</p>
+                            <p id="prioritytagcount">0</p>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
